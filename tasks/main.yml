@@ -1,0 +1,7 @@
+---
+
+- name: Install PHP packages
+  package:
+    name: "{{ item }}"
+    state: installed
+  with_items: "{{ php_suite[php_install_type] }}"
