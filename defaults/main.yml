@@ -7,7 +7,6 @@ php_suite:
     - php
   suite:
     - php
-    - php-devel
     - php-mysql
     - php-gd
     - php-pspell
