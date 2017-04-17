@@ -1,0 +1,17 @@
+---
+
+php_install_type: suite
+
+php_suite:
+  basic:
+    - php
+  suite:
+    - php
+    - php-devel
+    - php-mysql
+    - php-gd
+    - php-pecl-memcache
+    - php-pspell
+    - php-snmp
+    - php-xmlrpc
+    - php-xml

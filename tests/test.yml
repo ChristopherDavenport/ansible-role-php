@@ -10,3 +10,9 @@
   roles:
     - role_under_test
   post_tasks:
+    - name: Check PHP Information
+      register: __php_version_check
+      command: php -i
+      changed_when: false
+    - name: Output PHP Version
+      debug: var=__php_version_check.stdout_lines
